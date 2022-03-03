@@ -14,10 +14,10 @@ function MyApp({ Component, pageProps }) {
     }, []);
     return (
         <>
+            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
             <Head>
                 <div>
                     <title>Popeye's</title>
-                    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" charSet="utf-8" />
                     <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png" />
                 </div>
