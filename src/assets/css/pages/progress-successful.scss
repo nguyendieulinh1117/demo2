@@ -1,0 +1,115 @@
+@import "../common/variable.scss";
+
+.section-progress-successful{
+    padding: 72px 0 123px;
+
+    @include Responsive(SM){
+        padding: 32px 0 80px;
+    }
+
+    .grid-progress{
+        display: grid;
+        grid-template-columns: 65% auto;
+
+        @include Responsive(SM){
+            grid-template-columns: 100%;
+        }
+    }
+
+    .left{
+        padding-left: 170px;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.0025em;
+
+        @include Responsive(LG){
+            padding-left: 100px;
+        }
+
+        @include Responsive(MD){
+            padding-left: 0;
+        }
+
+        @include Responsive(SM){
+            line-height: 21px;
+            padding: 0 15px;
+        }
+    }
+
+    .right.bg-successful-delivery{
+        padding-right: 50px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        @include Responsive(MD){
+            padding-right: 0;
+        }
+
+        @include Responsive(SM){
+            grid-row-start: 1;
+        }
+    }
+
+    .text-brand{
+        color: $color_brand;
+
+        @include Responsive(SM){
+            font-size: 24px;
+            line-height: 29px;
+            max-width: 200px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 12px;
+        }
+    }
+
+    .border-armchair-lightest{
+        border: none;
+    }
+
+    .happy{
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.0025em;
+        padding: 16px;
+        border: 1px solid #E0E0E0;
+        box-sizing: border-box;
+        border-radius: 8px;
+        margin-top: 24px;
+    }
+
+    .btn-armchair{
+        width: max-content;
+        background-color: $color_brand;
+        padding: 8px 34px 14px;
+        border-radius: 34px;
+        border: 0;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        cursor: pointer;
+        margin-left: 170px;
+        margin-top: 16px;
+        display: inline-block;
+
+        @include Responsive(LG){
+            margin-left: 100px;
+        }
+
+        @include Responsive(MD){
+            margin-left: 0;
+        }
+    }
+
+    .text-coke{
+        color: $color_brand !important;
+    }
+    
+    .sm-center{
+
+        @include Responsive(SM){
+            text-align: center;
+        }
+    }
+}

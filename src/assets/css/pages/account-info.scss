@@ -1,0 +1,282 @@
+@import "../common/variable.scss";
+@import "../components/lich-su-diem-thuong.scss";
+@import "../components/uu-dai-cua-toi.scss";
+@import "../components/lich-su-don-hang.scss";
+@import "../components/cai-dat.scss";
+@import "../components/dia-chi-giao-hang.scss";
+@import "../components/tu-den-lay.scss";
+.rewards-page {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  .rewards-container {
+    display: flex;
+    height: 100%;
+    @include Responsive(XS) {
+      display: block;
+    }
+    @include Responsive(SM) {
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  .layout-list-detail {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+    @include Responsive(SM) {
+      max-width: 100%;
+    }
+    @include Responsive(LG) {
+      max-width: 100%;
+     
+    }
+  
+    .box-rewards {
+      padding: 32px 0 132px calc(100% - 45.5em);
+      &.main{
+        padding-top: 42px;
+        @include Responsive(SM){
+          padding-top: 21px;
+        }
+      }
+      @include Responsive(SM) {
+        padding: 16px 0 0 0;
+      }
+      .box-title{
+        display: flex;
+        align-items: center;
+    }
+      .title {
+        font-weight: normal;
+        font-size: 26px;
+        color: #FF7D01;
+        letter-spacing: 0.005em;
+        display: flex;
+        align-items: center;
+        a{
+          display: none;
+          transform: rotate(180deg);
+          margin-right: 8px;
+          padding: 6px 9px;
+        }
+       
+        @include Responsive(SM){
+          padding-top: 16px;
+          font-size: 20px;
+          a{
+            display: block;
+          }
+        }
+      }
+      .rewards-card {
+        width: 100%;
+        max-width: 454px;
+        height: auto;
+        border-radius: 24px;  
+        overflow: hidden;
+        @include Responsive(SM){
+           margin: 0 auto;
+          }
+        &:nth-child(2) {
+            background-color: #fff2c2;
+            padding: 24px;
+            margin-top: 32px;
+          @include Responsive(SM){
+            margin-top: 24px;
+          }
+        }
+          .rewards-name {
+            // width: 60%;
+            // padding: 29.65px 41.65px 29.65px 27.5px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            .img-item {
+              width: 129px;
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+            .name {
+              padding-top: 15px;
+              font-size: 24px;
+              line-height: 36px;
+              font-weight: 700;
+          }
+        }
+        .rank {
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 24px;
+          letter-spacing: 0.0015em;
+        }
+        .next-rank-score {
+          margin-top: 8px;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.0015em;
+        }
+        .rank-exp {
+          background-color: #bdbdbd;
+          border-radius: 32px;
+          max-width: 100%;
+          height: 8px;
+          margin-top: 8px;
+          .exp-collected {
+            border-radius: 32px 0 0 32px;
+            background-color: #ff7d01;
+            height: 100%;
+            max-width: 50%;
+          }
+        }
+        .benefit {
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          margin-top: 5px;
+          letter-spacing: 0.015em;
+          a {
+            text-decoration: none;
+            color: #ff7d01;
+            font-size: 10px;
+            line-height: 12px;
+            img {
+              margin-left: 12.3px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .layout-sidebar {
+    width: 100%;
+    max-width: 40%;
+    min-width: 300px;
+    border-left: 1px solid #e0e0e0;
+    background-color: #fff;
+    padding-bottom: 56px;
+    @include Responsive(M17){
+      max-width: 27.4%;
+      min-width: 300px;
+    }
+    @include Responsive(XS) {
+      font-size: 14px;
+    }
+   
+    @include Responsive(SM) {
+        max-width: 100%;
+        margin-top: 25px;
+        padding-bottom: 2px;
+        background-color: unset;
+        &.page{
+          display: none;
+        }
+      }
+    .side-bar {
+      width: 100%;
+      height: auto;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      @include Responsive(SM) {
+            background-color: #fff;
+      }
+      li {
+        border-top: 1.5px solid #ff7d01;
+        letter-spacing: 0.0015em;
+        &:last-child {
+          border-bottom: 1.5px solid #ff7d01;
+        }
+        &.active{
+          > a{
+            .arrow{
+              img{
+                transform: rotate(-90deg);
+              }
+            }
+          }
+          .sub-menu{
+            height: max-content;
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+        a {
+          padding: 16px 0 16px 16px;
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+          gap: 8px;
+          color: black;
+          text-decoration: none;
+          &:hover {
+            background-color: #F5F1EF;
+          }
+          .arrow{
+            width: 100%;
+            max-width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+              width: auto !important;
+            }
+          }
+          .icon {
+            width: 100%;
+            max-width: 24px;
+            height: 24px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+              width: auto;
+            }
+          }
+
+          &.active {
+            background-color: #F5F1EF;
+          }
+        }
+
+        .sub-menu{
+            list-style: none;
+            padding-left: 0;
+            height: 0;
+            visibility: hidden;
+            opacity: 0;
+            li{
+               border-bottom: 0;
+
+               a{
+                   padding-left: 48px;
+                   .arrow{
+                     padding-right: 19px;
+                   }
+               }
+            }
+        }
+      }
+    }
+  }
+  .apps {
+    width: 100%;
+    height: 425px;
+    background: url("../../img/rewards/apps.svg") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .section-title {
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 30px;
+    letter-spacing: 0.0015em;
+    margin-bottom: 16px;
+    align-items: center;
+  }
+}

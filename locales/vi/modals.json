@@ -1,0 +1,15 @@
+{
+    "phone": "Số điện thoại",
+    "password": "Mật khẩu",
+    "forget": "Quên mật khẩu",
+    "name": "Họ và tên của bạn",
+    "confirm_password": "Xác nhận mật khẩu",
+    "enter_phone": "Nhập số điện thoại của bạn",
+    "enter_password": "Nhập mật khẩu",
+    "enter_name": "Nhập tên đăng nhập",
+    "enter_confirm_password": "Nhập lại mật khẩu để xác nhận",
+    "understand": "Đã hiểu",
+    "notification": "Thông báo",
+    "title_address": "Hệ thống đã tự chọn cho bạn cửa hàng gần nhất là",
+    "content_address": "Vui lòng chọn cửa hàng khác nếu bạn muốn thay đổi"
+}

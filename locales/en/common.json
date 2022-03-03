@@ -1,0 +1,18 @@
+{
+    "menu": "Menu",
+    "promotion": "Promotions",
+    "store": "Locations",
+    "tracking": "Order tracking",
+    "party": "Parties",
+    "about": "About us",
+    "career": "Career",
+    "news": "News",
+    "contact": "Contact",
+    "voucher": "E-voucher",
+    "hotline": "Hotline",
+    "logout": "Logout",
+    "welcome": "Welcome",
+    "signin": "Sign in",
+    "signup": "Sign up",
+    "order_now": "Order now"
+}

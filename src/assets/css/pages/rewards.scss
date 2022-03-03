@@ -1,0 +1,231 @@
+@import "../common/variable.scss";
+.section-rewards{
+    .margin-section{
+        margin-top: 56px;
+        @include Responsive(SM){
+            margin-top: 24px;
+        }
+    }
+    .container{
+        margin-bottom: 0;
+    }
+    .banner{
+        width: 100%;
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    .title-box{
+        text-align: center;
+        margin-top: 66px;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.001em;
+        @include Responsive(SM){
+            margin-top: 24px;
+        }
+        .title-main{
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 72px;
+            color: #FF7D01;
+            position: relative;
+            width: max-content;
+            margin:auto  ;
+            @include Responsive(MD){
+                font-size: 38px;
+            }
+            @include Responsive(SM){
+                font-size: 34px;
+                width: 100%;
+                line-height: 41px;
+                letter-spacing: 0.0025em;
+            }
+            .blink{
+                position: absolute;
+                left: -18%;
+             
+                @include Responsive(SM){
+                   display: none;
+                }
+            }
+            .blink2{
+                position: absolute;
+                right: -18%;
+              
+                @include Responsive(SM){
+                    display: none;
+                 }
+            }
+        }
+        &.nth-title{
+            font-size: 15px;
+            margin-top: 0;
+            line-height: 24px;
+            letter-spacing: 0;
+            .title-main{
+                margin:0 auto 18px ;
+                @include Responsive(SM){
+                    margin-bottom: 12px;
+                }
+            }
+         
+        }
+    }
+    .box-item{
+        display: flex;
+        justify-content: center;
+        gap: 72px;
+        @include Responsive(SM){
+            align-items: center;
+            flex-direction: column;
+            gap: 36px;
+            &.margin-section{
+                margin-top: 36px;
+            }
+        }
+        .content-item{
+            .title{
+                font-weight: bold;
+            }
+        }
+    }
+    .item{
+        width: 100%;
+        max-width: 348px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &.blogs-item{
+            max-width: 430px;
+            .img-item{
+                border-radius: 8px;
+                overflow: hidden;
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+        .content-item{
+            margin-top: 24px;
+            .title{
+                margin-bottom: 8px;
+                font-size: 20px;
+                line-height: 30px;
+                letter-spacing: 0.0015em;
+                color: #FF7D01;
+            }
+            span{
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: 0.001em;
+                a{
+                    color: #FF7D01;
+                    text-decoration: underline !important;
+                    font-weight: 600;
+                }
+            }
+        }
+        &.blogs-item{
+            .content-item{
+                .title{
+                    line-height: 24px !important;
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+    .blog-box{
+        padding: 24px 0 56px;
+        background: #F5F1EF;
+        @include Responsive(SM){
+            padding-bottom: 48px;
+        }
+    }
+    .blogs{
+        padding: 0 15px;
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        @include Responsive(MD){
+            gap: 12px;
+        }
+        @include Responsive(SM){
+            align-items: center;
+            &.margin-section{
+                margin-top: 36px;
+            }
+            flex-direction: column;
+            gap: 24px;
+          
+        }
+    }
+    .faq{
+        background-color: #F5F1EF;
+        .faq-box{
+            padding: 24px 0 11px;
+            display: flex;
+            gap: 64px;
+            justify-content: center;
+            margin-bottom: 0;
+            border-bottom: 1px solid #E0E0E0;
+            @include Responsive(SM){
+                gap: 32px;
+            }
+            a{
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.0015em;
+                color: #828282;
+                position: relative;
+                &:hover{
+                    color: #FF7D01;
+                   &::after{
+                       content: '';
+                        position: absolute;
+                        height: 3px;
+                        width: 100%;
+                        background-color: #FF7D01;
+                        bottom: -11px;
+                        left: 0;
+                   }
+                }
+                &.active{
+                    color: #FF7D01;
+                    &::after{
+                        content: '';
+                         position: absolute;
+                         height: 3px;
+                         width: 100%;
+                         background-color: #FF7D01;
+                         bottom: -11px;
+                         left: 0;
+                    }
+                }
+            }
+        }
+      
+    }
+    .term{
+        max-width: 634px;
+        margin: 32px auto 67px;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.001em;
+        a{
+            color: #FF7D01;
+        }
+        @include Responsive(SM){
+            margin: 12px auto 48px;
+            padding: 0 16px;
+        }
+    }
+}

@@ -1,0 +1,201 @@
+@import "../common/variable.scss";
+
+.section-promotion-detail {
+  padding: 72px 0 0;
+  @include Responsive(SM) {
+    padding: 16px 37.5px 0;
+  }
+  .container {
+    margin-bottom: 0;
+    @include Responsive(SM) {
+      padding: 0;
+      max-width: 100%;
+    }
+  }
+
+  .section-title{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 0.0015em;
+    text-align: center;
+    color: #333333;
+    display: none;
+    margin-bottom: 24px;
+
+    @include Responsive(SM){
+        display: block;
+    }
+  }
+
+  .box-promotion {
+    display: flex;
+    border-bottom: 1px solid $color_grey_lightest;
+    padding: 0 20px 36px ;
+
+    @include Responsive(SM) {
+      flex-direction: column;
+      background-color: #fff;
+      padding: 0 0 42px;
+    }
+    .promotion-image {
+      width: 33%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include Responsive(SM) {
+        width: 100%;
+      }
+      img {
+        object-fit: cover;
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+        @include Responsive(SM) {
+          max-width: 343px;
+          border: 0;
+        }
+      }
+    }
+    .promotion-text {
+      width: 67%;
+      padding: 8px 0 0 64px;
+      @include Responsive(LG) {
+        padding: 8px 0 0 30px;
+      }
+      @include Responsive(SM) {
+        width: 100%;
+        padding: 12px 0 0 0;
+      }
+      .promotion-name {
+        color: $color-grey_2;
+        font-size: 34px;
+        line-height: 51px;
+        letter-spacing: 0.0025em;
+        @include Responsive(LG) {
+          font-size: 26px;
+          line-height: 32px;
+        }
+        @include Responsive(SM) {
+          font-size: 24px;
+          line-height: 28px;
+          text-align: center;
+        }
+      }
+      .small-line {
+        width: 64px;
+        margin-top: 8px;
+        border-top: 2px solid $color_grey_lightest;
+        border-radius: 2px;
+        @include Responsive(SM) {
+          margin-top: 12px;
+          display: none;
+        }
+      }
+      .deal-list {
+        margin-top: 24px;
+        max-width: 637.42px;
+        @include Responsive(SM) {
+          margin-top: 12px;
+        }
+        .deal {
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.0015em;
+          color: #333333;
+          margin-top: 12px;
+          @include Responsive(SM) {
+            letter-spacing: 0.001em;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.section-product-promotion {
+  padding: 24px 0 87px;
+
+  @include Responsive(SM){
+    padding: 32px 0 87px;
+  }
+
+  .title-main{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: $color_brand;
+    text-align: center;
+  }
+
+  .product-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 36px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 36px auto 0;
+
+    @include Responsive(LG){
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include Responsive(MD){
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include Responsive(SM){
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0 69px;
+      margin: 31px auto 0;
+    }
+
+    .product-item{
+      border: 1px solid $color_grey_lightest;
+      box-sizing: border-box;
+      border-radius: 32px;
+      overflow: hidden;
+
+      .product-image{
+        a{
+          display: block;
+
+          img{
+            width: 100%;
+          }
+        }
+      }
+
+      .product-body{
+        padding: 5px 8px 20px;
+        text-align: center;
+
+        .product-name{
+          display: block;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          color: $color_brand;
+        }
+
+        .product-price{
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.0015em;
+          text-decoration-line: line-through;
+          color: $color_grey;
+          margin-top: 2px;
+          margin-bottom: 0;
+
+          &.sale{
+            text-decoration-line: initial;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}

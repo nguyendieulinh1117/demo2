@@ -1,0 +1,278 @@
+@font-face {
+  font-family: "Circular Std";
+  src: url("../font/CircularStd-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../font/CircularStd-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../font/CircularStd-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../font/CircularStd-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../font/CircularStd-Book.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../font/CircularStd-BookItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../font/CircularStd-Medium.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../font/CircularStd-MediumItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Font Poppins VN */
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/PoppinsVN-200.eot");
+  src: url("../font/PoppinsVN-200.eot?#iefix") format("embedded-opentype"),
+    url("../font/PoppinsVN-200.woff2") format("woff2"), url("../font/PoppinsVN-200.woff") format("woff"),
+    url("../font/PoppinsVN-200.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/PoppinsVN-400.eot");
+  src: url("../font/PoppinsVN-400.eot?#iefix") format("embedded-opentype"),
+    url("../font/PoppinsVN-400.woff2") format("woff2"), url("../font/PoppinsVN-400.woff") format("woff"),
+    url("../font/PoppinsVN-400.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/PoppinsVN-100.eot");
+  src: url("../font/PoppinsVN-100.eot?#iefix") format("embedded-opentype"),
+    url("../font/PoppinsVN-100.woff2") format("woff2"), url("../font/PoppinsVN-100.woff") format("woff"),
+    url("../font/PoppinsVN-100.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/PoppinsVN-100i.eot");
+  src: url("../font/PoppinsVN-100i.eot?#iefix") format("embedded-opentype"),
+    url("../font/PoppinsVN-100i.woff2") format("woff2"), url("../font/PoppinsVN-100i.woff") format("woff"),
+    url("../font/PoppinsVN-100i.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/PoppinsVN-300i.eot");
+  src: url("../font/PoppinsVN-300i.eot?#iefix") format("embedded-opentype"),
+    url("../font/PoppinsVN-300i.woff2") format("woff2"), url("../font/PoppinsVN-300i.woff") format("woff"),
+    url("../font/PoppinsVN-300i.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/PoppinsVN-300.eot");
+  src: url("../font/PoppinsVN-300.eot?#iefix") format("embedded-opentype"),
+    url("../font/PoppinsVN-300.woff2") format("woff2"), url("../font/PoppinsVN-300.woff") format("woff"),
+    url("../font/PoppinsVN-300.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/PoppinsVN-500i.eot");
+  src: url("../font/PoppinsVN-500i.eot?#iefix") format("embedded-opentype"),
+    url("../font/PoppinsVN-500i.woff2") format("woff2"), url("../font/PoppinsVN-500i.woff") format("woff"),
+    url("../font/PoppinsVN-500i.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/PoppinsVN-600.eot");
+  src: url("../font/PoppinsVN-600.eot?#iefix") format("embedded-opentype"),
+    url("../font/PoppinsVN-600.woff2") format("woff2"), url("../font/PoppinsVN-600.woff") format("woff"),
+    url("../font/PoppinsVN-600.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/PoppinsVN-600i.eot");
+  src: url("../font/PoppinsVN-600i.eot?#iefix") format("embedded-opentype"),
+    url("../font/PoppinsVN-600i.woff2") format("woff2"), url("../font/PoppinsVN-600i.woff") format("woff"),
+    url("../font/PoppinsVN-600i.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/PoppinsVN-700.eot");
+  src: url("../font/PoppinsVN-700.eot?#iefix") format("embedded-opentype"),
+    url("../font/PoppinsVN-700.woff2") format("woff2"), url("../font/PoppinsVN-700.woff") format("woff"),
+    url("../font/PoppinsVN-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/PoppinsVN-800.eot");
+  src: url("../font/PoppinsVN-800.eot?#iefix") format("embedded-opentype"),
+    url("../font/PoppinsVN-800.woff2") format("woff2"), url("../font/PoppinsVN-800.woff") format("woff"),
+    url("../font/PoppinsVN-800.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/PoppinsVN-400i.eot");
+  src: url("../font/PoppinsVN-400i.eot?#iefix") format("embedded-opentype"),
+    url("../font/PoppinsVN-400i.woff2") format("woff2"), url("../font/PoppinsVN-400i.woff") format("woff"),
+    url("../font/PoppinsVN-400i.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PoppinsVN 500";
+  src: url("../font/PoppinsVN-500.eot");
+  src: url("../font/PoppinsVN-500.eot?#iefix") format("embedded-opentype"),
+    url("../font/PoppinsVN-500.woff2") format("woff2"), url("../font/PoppinsVN-500.woff") format("woff"),
+    url("../font/PoppinsVN-500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/PoppinsVN-700i.eot");
+  src: url("../font/PoppinsVN-700i.eot?#iefix") format("embedded-opentype"),
+    url("../font/PoppinsVN-700i.woff2") format("woff2"), url("../font/PoppinsVN-700i.woff") format("woff"),
+    url("../font/PoppinsVN-700i.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/PoppinsVN-800i.eot");
+  src: url("../font/PoppinsVN-800i.eot?#iefix") format("embedded-opentype"),
+    url("../font/PoppinsVN-800i.woff2") format("woff2"), url("../font/PoppinsVN-800i.woff") format("woff"),
+    url("../font/PoppinsVN-800i.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/PoppinsVN-900i.eot");
+  src: url("../font/PoppinsVN-900i.eot?#iefix") format("embedded-opentype"),
+    url("../font/PoppinsVN-900i.woff2") format("woff2"), url("../font/PoppinsVN-900i.woff") format("woff"),
+    url("../font/PoppinsVN-900i.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/PoppinsVN-900.eot");
+  src: url("../font/PoppinsVN-900.eot") format("embedded-opentype"),
+    url("../font/PoppinsVN-900.woff2") format("woff2"), url("../font/PoppinsVN-900.woff") format("woff"),
+    url("../font/PoppinsVN-900.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "VN-Chicken Sans";
+  src: url("../font/VN-ChickenSans-ExtraLight.eot");
+  src: url("../font/VN-ChickenSans-ExtraLight.eot") format("embedded-opentype"),
+    url("../font/VN-ChickenSans-ExtraLight.woff2") format("woff2"), url("../font/VN-ChickenSans-ExtraLight.woff") format("woff"),
+    url("../font/VN-ChickenSans-ExtraLight.ttf") format("truetype"),
+    url("../font/VN-ChickenSans-ExtraLight.svg") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "VN-Chicken Sans";
+  src: url("../font/VN-ChickenSans-Bold.eot");
+  src: url("../font/VN-ChickenSans-Bold.eot") format("embedded-opentype"),
+    url("../font/VN-ChickenSans-Bold.woff2") format("woff2"), url("../font/VN-ChickenSans-Bold.woff") format("woff"),
+    url("../font/VN-ChickenSans-Bold.ttf") format("truetype"), url("../font/VN-ChickenSans-Bold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "VN-Chicken Sans";
+  src: url("../font/VN-ChickenSans-Regular.eot");
+  src: url("../font/VN-ChickenSans-Regular.eot") format("embedded-opentype"),
+    url("../font/VN-ChickenSans-Regular.woff2") format("woff2"), url("../font/VN-ChickenSans-Regular.woff") format("woff"),
+    url("../font/VN-ChickenSans-Regular.ttf") format("truetype"),
+    url("../font/VN-ChickenSans-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

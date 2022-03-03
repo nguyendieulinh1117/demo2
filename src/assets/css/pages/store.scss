@@ -1,0 +1,283 @@
+@import "../common/variable.scss";
+
+.store-page {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    @include Responsive(SM) {
+        padding-top: 24px;
+        padding-bottom: 0;
+    }
+    .map-store {
+        width: 65%;
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+        @include Responsive(SM) {
+            width: 100%;
+            height: 450px;
+        }
+        @include Responsive(XS) {
+            height: 300px;
+        }
+
+        iframe,
+        .map-canvas {
+            width: 100%;
+            height: 100%;
+        }
+        .map-control {
+            position: absolute;
+            width: 45%;
+            right: 30%;
+            top: 15px;
+            z-index: 1;
+            @include Responsive(LG) {
+                right: 20%;
+            }
+            @media screen and (max-width: 1024px) {
+                width: calc(100% - 60px);
+                right: 30px;
+                top: 60px;
+            }
+            @include Responsive(SM) {
+                width: 70%;
+                right: 65px;
+                top: 15px;
+            }
+            .google-search-input {
+                border-radius: 0;
+                height: 30px;
+                padding: 6px 12px;
+                @include Responsive(SM) {
+                    height: 33px;
+                }
+            }
+            .search-box-address {
+                font-family: Roboto;
+                font-size: 15px;
+                line-height: 18px;
+                color: #565656;
+            }
+            .input-group-text {
+                background-color: #d90e07;
+                height: 30px;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                width: 30px;
+                padding: 0;
+                justify-content: center;
+                color: #fff;
+                @include Responsive(SM) {
+                    height: 33px;
+                    width: 33px;
+                }
+            }
+
+            .list-search {
+                background: #fff;
+                padding: 12px;
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        padding: 8px 0;
+                        border-bottom: 1px solid #e2e2e2;
+                    }
+                }
+            }
+        }
+    }
+
+    .box-info-store {
+        width: 35%;
+        padding: 30px 30px 20px;
+
+        @include Responsive(SM) {
+            width: 100%;
+            padding: 24px 16px 12px;
+        }
+
+        .title-list-store {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 6px;
+            letter-spacing: 0.0025em;
+            text-transform: uppercase;
+            color: #333333;
+        }
+
+        .hotline-store {
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.0015em;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: $color_accent;
+        }
+
+        .list-select-city {
+            margin-bottom: 8px;
+            display: flex;
+            column-gap: 14px;
+            @include Responsive(LG) {
+                flex-direction: column;
+            }
+            @include Responsive(SM) {
+                flex-direction: row;
+            }
+            @include Responsive(XS) {
+                flex-direction: column;
+            }
+            .select-city {
+                border: 1px solid #e0e0e0;
+                box-sizing: border-box;
+                border-radius: 8px;
+                margin-bottom: 16px;
+                &:last-child {
+                    @include Responsive(XS) {
+                        margin-bottom: 0;
+                    }
+                }
+                @include Responsive(SM) {
+                    background-color: #fff;
+                    color: $color_grey;
+                    margin-bottom: 0;
+                }
+                @include Responsive(XS) {
+                    margin-bottom: 16px;
+                }
+                &.custom-select {
+                    color: #828282;
+                    letter-spacing: 0.001em;
+                    line-height: 19px;
+                    padding: 10px 40px 10px 22px;
+                    height: auto;
+                    font-size: 14px;
+                }
+                // &:last-child {
+                //   margin-bottom: 0;
+                // }
+            }
+        }
+
+        .list-store {
+            .item-store {
+                background-color: #fff;
+                display: flex;
+                border: 1px solid #e0e0e0;
+                padding: 12px 16px;
+                margin-bottom: 12px;
+                border-radius: 8px;
+                @include Responsive(SM) {
+                    margin-bottom: 24px;
+                }
+
+                .img-store {
+                    @include Responsive(MD) {
+                        display: none;
+                    }
+                    @include Responsive(SM) {
+                        display: block;
+                    }
+                }
+
+                .info-store {
+                    position: relative;
+                    width: 100%;
+                    background-color: #fff;
+                    border-radius: 8px;
+                    @include Responsive(MD) {
+                        background-color: transparent;
+                        margin-left: 0;
+                    }
+
+                    .name-store {
+                        color: $color_brand;
+                        margin-bottom: 8px;
+                        font-size: 20px;
+                        line-height: 24px;
+                        letter-spacing: 0.005em;
+                        @include Responsive(SM) {
+                            .name {
+                                display: inline-block;
+                                margin-right: 8px;
+                            }
+
+                            .distance {
+                                display: inline-block !important;
+                                font-weight: 400;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    .line {
+                        width: 65px;
+                        height: 2px;
+                        background-color: #e0e0e0;
+                        margin-bottom: 8px;
+                    }
+
+                    .desc-store {
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 17px;
+                        letter-spacing: 0.0025em;
+                        color: #333333;
+                    }
+                    .wrap-btn-store {
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-top: 12px;
+                        .btn-store {
+                            background: $color_brand;
+                            border-radius: 48px;
+                            padding: 10px 16px 14px;
+                            font-size: 16px;
+                            line-height: 19px;
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            letter-spacing: 0.005em;
+                            font-weight: bold;
+                            color: #ffffff;
+                            &:hover {
+                                background: $orange_light;
+                            }
+                        }
+                    }
+                    .icon-mappin {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .list-store:not(:last-child) {
+            @include Responsive(SM) {
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .continue-btn {
+        margin: 16px;
+        padding: 18px 0 12px 0;
+        width: 100%;
+        max-width: 496px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border-radius: 32px;
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: $color_red_darkest;
+    }
+}

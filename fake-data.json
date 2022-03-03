@@ -1,0 +1,103 @@
+{
+    "products": [
+        {
+            "name": "Gà tắm nước mắm",
+            "description": "Tắm nước mắm",
+            "price": 45000,
+            "discount": 20,
+            "slug": "aa",
+            "sku": "ksks",
+            "optionGroups": [
+                {
+                    "name": "group a",
+                    "isRequired": true,
+                    "multipleSelectAllowed": false,
+                    "maxTotalQuantity": 1,
+                    "options": [
+                        {
+                            "name": " string",
+                            "addtionalPrice": 12,
+                            "discount": 20,
+                            "description": "des",
+                            "maxQuantity": 1
+                        }
+                    ]
+                }
+            ],
+            "categories": [1],
+            "images": [
+                {
+                    "originUrl": "url",
+                    "mediumUrl": "me",
+                    "smallUrl": "sma"
+                }
+            ]
+        },
+        {
+            "name": "Gà tắm nước mắm",
+            "description": "Tắm nước mắm",
+            "price": 45000,
+            "discount": 20,
+            "slug": "aa",
+            "sku": "ksks",
+            "optionGroups": [
+                {
+                    "name": "group a",
+                    "isRequired": true,
+                    "multipleSelectAllowed": false,
+                    "maxTotalQuantity": 1,
+                    "options": [
+                        {
+                            "name": " string",
+                            "addtionalPrice": 12,
+                            "discount": 20,
+                            "description": "des",
+                            "maxQuantity": 1
+                        }
+                    ]
+                }
+            ],
+            "categories": [1],
+            "images": [
+                {
+                    "originUrl": "url",
+                    "mediumUrl": "me",
+                    "smallUrl": "sma"
+                }
+            ]
+        },
+        {
+            "name": "Gà tắm nước mắm",
+            "description": "Tắm nước mắm",
+            "price": 45000,
+            "discount": 20,
+            "slug": "aa",
+            "sku": "ksks",
+            "optionGroups": [
+                {
+                    "name": "group a",
+                    "isRequired": true,
+                    "multipleSelectAllowed": false,
+                    "maxTotalQuantity": 1,
+                    "options": [
+                        {
+                            "name": " string",
+                            "addtionalPrice": 12,
+                            "discount": 20,
+                            "description": "des",
+                            "maxQuantity": 1
+                        }
+                    ]
+                }
+            ],
+            "categories": [1],
+            "images": [
+                {
+                    "originUrl": "url",
+                    "mediumUrl": "me",
+                    "smallUrl": "sma"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "phone": "Phone number",
+    "password": "Password",
+    "forget": "Forget password",
+    "name": "Your fullname",
+    "confirm_password": "Confirm password",
+    "enter_phone": "Enter your phone number",
+    "enter_password": "Enter your password",
+    "enter_name": "Enter your name",
+    "enter_confirm_password": "Re-enter password to confirm",
+    "understand": "Ok",
+    "notification": "Notification",
+    "title_address": "We found the nearest Popeyes store in your area",
+    "content_address": "Please select another store if you want to change"
+}

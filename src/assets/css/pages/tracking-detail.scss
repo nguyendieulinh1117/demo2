@@ -1,0 +1,205 @@
+@import "../common/variable.scss";
+
+.section-tracking {
+    padding-bottom: 128px;
+    height: 100%;
+    @include Responsive(SM) {
+        padding-bottom: 85px;
+    }
+    .container {
+        margin-bottom: 0;
+    }
+    .title-tracking {
+        font-size: 26px;
+        margin-bottom: 24px;
+        @include Responsive(SM) {
+            font-size: 24px;
+        }
+    }
+    .form-tracking {
+        max-width: 650px;
+        margin-bottom: 0;
+
+        .input-group-coke .input-group-text {
+            background-color: $color_red_darkest;
+            border-top-left-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+            border: none;
+            margin-left: 1px;
+            padding: 0.6rem 1rem 0.85rem;
+            cursor: pointer;
+            border-top-right-radius: 40px !important;
+            border-bottom-right-radius: 40px !important;
+            background: $color_brand;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .input-group-coke .form-control {
+            border-top: 1px solid #ced4da;
+            border-right: none;
+            border-left: 1px solid #ced4da;
+            border-radius: 40px 0px 0px 40px;
+            padding: 13px 26px;
+            font-size: 16px;
+            line-height: 19px;
+
+            
+            &:focus{
+                outline: none;
+                box-shadow: none;
+                border-color: #ced4da;
+            }
+        }
+
+        .input-group-coke .form-control::-moz-placeholder {
+            color: #858891;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            @include Responsive(XS) {
+                font-size: 14px;
+            }
+        }
+
+        .input-group-coke .form-control:-ms-input-placeholder {
+            color: #bdbdbd;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            @include Responsive(XS) {
+                font-size: 14px;
+            }
+        }
+
+        .input-group-coke .form-control::placeholder {
+            color: #bdbdbd;
+            font-style: normal;
+            font-weight: normal;
+            @include Responsive(XS) {
+                font-size: 14px;
+            }
+        }
+
+        .input-group-append {
+            a {
+                color: white;
+            }
+        }
+    }
+
+    .box-tracking {
+        padding-top: 72px;
+
+        .search-results {
+            padding-top: 24px;
+            @include Responsive(SM) {
+                padding-top: 40px;
+            }
+            .mrb-results {
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.005em;
+                @include Responsive(SM) {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.0015em;
+                }
+            }
+        }
+
+        .table-tracking {
+            width: 100%;
+            color: #25282d;
+            thead {
+                height: 64px;
+                line-height: 36px;
+                color: #828282;
+                font-size: 16px;
+                @include Responsive(SM) {
+                    background-color: #f2f2f2;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #333333;
+                    letter-spacing: 0.004em;
+                }
+                th {
+                    font-weight: 600;
+                    @include Responsive(SM) {
+                        padding-left: 8px;
+                    }
+                }
+            }
+
+            tbody {
+                td {
+                    padding-bottom: 9px;
+                    font-weight: bold;
+                    font-size: 16px;
+
+                    @include Responsive(SM) {
+                        padding: 14px 8px 14px 8px;
+                        border-bottom: 1px solid $color_grey_lightest;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 18px;
+                        &:nth-child(4) {
+                            padding-left: 0;
+                        }
+                        a {
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 18px;
+                            letter-spacing: 0.004em;
+                        }
+                    }
+
+                    .text-coke{
+                        color: $color_brand !important;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    @include Responsive(MD) {
+        .col-md-7 {
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+        .col-md-5 {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+    @include Responsive(SM) {
+        .col-md-7 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .col-md-5 {
+            display: none;
+        }
+    }
+    .box-bg-tracking {
+        margin-top: 70px !important;
+        display: flex;
+        margin: 0 auto;
+        max-width: 277.3px;
+        max-height: 304, 6px;
+        @include Responsive(MD) {
+            max-width: 100%;
+            max-height: 200px;
+        }
+        @include Responsive(SM) {
+            display: none;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

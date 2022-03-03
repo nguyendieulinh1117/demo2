@@ -1,0 +1,185 @@
+.footer {
+    position: relative;
+    background: $color_brand;
+    color: #fff;
+    padding-top: 32px;
+    padding-bottom: 30px;
+    @include Responsive(SM) {
+        padding-bottom: 24px;
+    }
+    .container {
+        margin-bottom: 0;
+    }
+    .wrapper-social {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid red;
+        @include Responsive(MD) {
+            width: 100%;
+            justify-content: center;
+        }
+        .footer-search {
+            margin-bottom: 8px;
+            @include Responsive(MD) {
+                width: 100%;
+            }
+        }
+        .connect-to-domino {
+            margin-bottom: 8px;
+            display: flex;
+            @include Responsive(MD) {
+                display: none;
+            }
+            .box-social {
+                display: flex;
+                align-items: center;
+                .title-connect {
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .footer-main {
+        // padding-top: 32px !important;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        .hotline-a-alias {
+            position: relative;
+            .box-hotline {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                .domino-hotline {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    text-align: center;
+                    flex-grow: 1 !important;
+                    @include Responsive(LG) {
+                        flex: 1;
+                    }
+                    .hotline-wrapper {
+                        padding-left: 24px;
+                        text-align: right;
+                        @include Responsive(SM) {
+                            padding-left: 0;
+                            text-align: unset;
+                        }
+                        p {
+                            font-size: 16px;
+                            font-weight: 600;
+                            margin-bottom: 0;
+                            @include Responsive(LG) {
+                                font-size: 12px;
+                            }
+                            img {
+                                padding-right: 8px;
+                                width: 24px;
+                            }
+                        }
+                        .comp-hotline {
+                            text-decoration: none;
+                            font-size: 48px;
+                            line-height: 58px;
+                        }
+                    }
+                }
+                .alias-menu-link {
+                    @include Responsive(MD) {
+                        display: none;
+                    }
+                    .box-list-about {
+                        display: flex;
+                        justify-content: center;
+                        .nav-groups {
+                            display: flex;
+                            align-items: flex-start;
+                            .nav {
+                                font-size: 14px;
+                                margin: 0 8px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                @include Responsive(LG) {
+                                    margin: 0;
+                                }
+                                .nav-item {
+                                    .nav-link {
+                                        font-weight: 600;
+                                        font-size: 12px;
+                                        line-height: 18px;
+                                        margin: 0 8px;
+                                        @include Responsive(LG) {
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .credentials {
+            .box-cre {
+                display: flex;
+                padding: 0;
+                justify-content: flex-end;
+                @include Responsive(MD) {
+                    padding-top: 24px;
+                }
+                img {
+                    height: auto;
+                }
+            }
+        }
+    }
+    .footer-end {
+        padding-top: 36px !important;
+        padding-left: 0;
+        padding-bottom: 8px;
+        .box-brand {
+            text-align: left;
+            padding: 0 15px;
+            font-size: 10px;
+            color: white;
+            font-weight: 600;
+            .domino-cc {
+                color: white;
+                font-size: 10px;
+                margin-bottom: 0;
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+        .box-brand-mobile {
+            display: none;
+            .domino-cc {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .box-switch {
+        position: absolute;
+        background: $color_red_darkest;
+        right: 94px;
+        bottom: 0;
+        padding: 8px 24px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        a {
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,144 @@
+.rewards-page {
+  .box-rewards {
+  &.page {
+    .item-container {
+      margin-top: 32px;
+      @include Responsive(SM){
+        margin-top: 16px;
+      }
+    }
+      // padding-bottom: 132px !important;
+      @include Responsive(SM) {
+        padding:0 0 230px 0 !important;
+      }
+      .rewards-card {
+        width: 100%;
+        max-width: 454px;
+        height: auto;
+        border-radius: 24px;
+        background-color: #fff2c2;
+        &:nth-child(2) {
+          padding: 24px 32px 30.5px 24px;
+          margin-top: 32px;
+          @include Responsive(SM) {
+            margin-top: 24px;
+          }
+        }
+        .rewards-items {
+          display: flex;
+          padding: 21px 0 32px 48px;
+          position: relative;
+          @include Responsive(SM) {
+              padding: 16px 0 24px 0;
+          }
+          &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 95px;
+            background-color: #FFD5AD;
+            left: 0;
+            bottom: 21px;
+            z-index: 0;
+            @include Responsive(SM) {
+              bottom: 16px;
+              height: 72px;
+            }
+          } 
+          .rewards-name {
+            width: 60%;
+            // padding: 0 41.65px 29.65px 27.5px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            @include Responsive(SM) {
+              width: 75%;
+            }
+            .img-item {
+              width: auto;
+              @include Responsive(SM) {
+                width: 96px;
+              }
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+            .name {
+              padding-top: 10px;
+              font-size: 24px;
+              line-height: 36px;
+              font-weight: 600;
+              @include Responsive(SM) {
+                padding-top: 7px;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: 0.0025em;
+              }
+            }
+          }
+          .rewards-score {
+            width: 50%;
+            // padding: 0 27.5px 41.3px 42px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            @include Responsive(SM) {
+              width: 45%;
+            }
+            .score {
+              font-size: 20px;
+              line-height: 24px;
+              font-weight: bold;
+              letter-spacing: 0.005em;
+              margin-top: 4px;
+              @include Responsive(SM) {
+                font-weight: 600;
+                font-size: 16px;
+                letter-spacing: 0.0015em;
+              }
+            }
+            .score-icon {
+              width: auto;
+              @include Responsive(SM) {
+                width: 28px;
+              }
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+            .qr {
+              padding-top: 20px;
+              @include Responsive(SM) {
+                width: 56px;
+              }
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+         
+        }
+        @include Responsive(SM){
+          .rank{
+            font-size: 16px !important;
+            line-height: 19px !important;
+          }
+          .next-rank-score{
+            font-size: 14px !important;
+            line-height: 17px !important; 
+            letter-spacing: 0.001em !important;
+          }
+        }
+      }
+    }
+  }
+}

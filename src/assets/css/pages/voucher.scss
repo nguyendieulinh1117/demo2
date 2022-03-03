@@ -1,0 +1,134 @@
+@import "../common/variable.scss";
+
+.section-voucher {
+    padding: 72px 124px;
+    background-color: #F5F1EF;
+    height: 100%;
+
+    @include Responsive(MD) {
+        padding: 47px 0 58px 0 !important;
+    }
+
+    @include Responsive(SM) {
+        background-color: white;
+        padding: 32px 16px 0 !important;
+    }
+
+    .container-voucher {
+        margin-top: 0 !important;
+
+        .card {
+            @include Responsive(MD) {
+                max-width: 500px;
+            }
+
+            @include Responsive(SM) {
+                border: none;
+                border-radius: none;
+                padding: 0;
+            }
+
+            &.org-card-base{
+                background-color: white;
+                border: 1px solid #BDBDBD;
+                box-sizing: border-box;
+                border-radius: 24px;
+                padding: 42px 42px 56px;
+                max-width: 732px;
+
+                @include Responsive(SM){
+                    border: none;
+                    padding: 0;
+                }
+            }
+
+            .card-body {
+                padding: 0 !important;
+                background-color: white;
+                .title-voucher {
+                    font-size: 24px ;
+                    line-height: 29px;
+                    letter-spacing: 0.005em;
+                    font-weight: 500 !important;
+
+                    @include Responsive(SM) {
+                        font-size: 24px;
+                        margin-bottom: 18px !important;
+                    }
+                    @include Responsive(MD) {
+                        margin-bottom: 24px;
+                    }
+                }
+
+                .enter-voucher{
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 0.0025em;   
+                }
+            }
+        }
+    }
+
+    .form-voucher-spacing {
+        margin-top: 36px;
+        background-position: top right;
+    }
+
+    .form-voucher {
+        width: 100%;
+
+        .input-group-coke .input-group-text {
+            background-color: $color_red_darkest;
+            border-top-left-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+            border: none;
+            margin-left: 1px;
+            cursor: pointer;
+            border-top-right-radius: 40px !important;
+            border-bottom-right-radius: 40px !important;
+            background: $color_brand;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .input-group-coke .form-control {
+            border-top: 1px solid #E0E0E0;
+            border-right: none;
+            border-left: 1px solid #E0E0E0;
+            border-radius: 40px 0px 0px 40px;
+            padding: 9px 26px 15px;
+            font-size: 16px;
+            line-height: 19px;
+            height: auto;
+
+            &:focus{
+                outline: none;
+                box-shadow: none;
+                border-color: #E0E0E0;
+            }
+
+            &:-moz-placeholder,
+            &::placeholder,
+            &::-ms-input-placeholder{
+                color: #BDBDBD;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 19px;
+            }
+
+            @include Responsive(SM){
+                padding: 9px 13px 15px;
+            }
+        }
+
+        .input-group-append {
+            .input-group-text{
+                padding: 12px 16px 18px !important;
+            }
+            
+            a {
+                color: white;
+            }
+        }
+    }
+}

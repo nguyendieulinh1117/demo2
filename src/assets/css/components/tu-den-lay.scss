@@ -1,0 +1,324 @@
+.rewards-page {
+  .box-rewards {
+    &.recieve {
+      padding-left: calc(100% - 57.7em) !important;
+      padding-right: 56px !important;
+      @include Responsive(LG) {
+        padding-right: 0 !important;
+      }
+      @include Responsive(SM) {
+        padding: 0 0 76px 0 !important;
+      }
+
+      .title {
+        justify-content: space-between !important;
+
+        .display-map {
+          font-size: 10px;
+          line-height: 15px;
+          color: black;
+          letter-spacing: 0.015em;
+          text-decoration: underline;
+          cursor: pointer;
+          display: none;
+          @include Responsive(SM) {
+            display: block;
+          }
+        }
+      }
+      .hidden {
+        display: none !important;
+      }
+      .item-container {
+        display: flex;
+        flex-direction: column;
+        @include Responsive(SM) {
+          flex-direction: column-reverse;
+        }
+
+        .address-title {
+          margin-top: 32px;
+          font-size: 16px;
+          @include Responsive(SM) {
+            margin-top: 30px;
+          }
+          &.small-title {
+            margin-top: 24px !important;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.004em;
+            color: #828282;
+            @include Responsive(LG) {
+              flex-direction: column;
+            }
+            @include Responsive(SM) {
+              margin-top: 28px !important;
+              text-align: center;
+            }
+            a {
+              font-weight: 600;
+              font-size: 12px;
+              line-height: 18px;
+              letter-spacing: 0.004em;
+              position: relative;
+              border-bottom: 1px solid #ff7d01;
+              @include Responsive(LG) {
+                margin: 8px auto 0;
+              }
+            }
+          }
+          &.view-btn {
+            margin-top: 28px;
+            justify-content: flex-end;
+            @include Responsive(SM) {
+              max-width: 424.5px;
+              margin: 0 auto;
+            }
+            a {
+              color: #fff;
+              background-color: #ff7d01;
+              padding: 8px 26px;
+              border-radius: 32px;
+              font-weight: 600;
+              font-size: 12px;
+              line-height: 18px;
+              letter-spacing: 0.004em;
+              text-align: center;
+            }
+          }
+          a {
+            font-size: 10px;
+            line-height: 15px;
+            letter-spacing: 0.015em;
+            color: #ff7d01;
+            font-weight: normal;
+          }
+          .check-list {
+            display: flex;
+            align-items: center;
+            label {
+              font-size: 14px;
+              line-height: 21px;
+              letter-spacing: 0.0025em;
+              font-weight: normal;
+              margin-bottom: 0;
+              padding-left: 8px;
+              cursor: pointer;
+            }
+          }
+          .select-list {
+            display: flex;
+            gap: 12px;
+            @include Responsive(SM) {
+              flex-wrap: wrap;
+              justify-content: center;
+            }
+            .box-select {
+              position: relative;
+              display: flex;
+              align-items: center;
+              img {
+                position: absolute;
+                right: 14px;
+              }
+            }
+            select {
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              padding: 7.5px 50px 7.5px 10px;
+              font-size: 14px;
+              line-height: 21px;
+              letter-spacing: 0.001em;
+              color: #bdbdbd;
+              border: 1px solid #828282;
+              border-radius: 8px;
+              &:focus {
+                outline: none;
+              }
+              @include Responsive(SM) {
+                padding: 13.5px 0 13.5px 16px;
+                width: 165px;
+              }
+            }
+          }
+        }
+        .item-box {
+          .box-address {
+            .address {
+              font-size: 16px;
+              line-height: 19px;
+              letter-spacing: 0.0015em;
+              color: #828282;
+              margin-top: 8px;
+              @include Responsive(SM){
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.004em;
+              }
+            }
+          }
+          .box-item {
+            .address-title {
+              font-size: 14px;
+              margin-top: 42px;
+              @include Responsive(SM) {
+                flex-direction: column;
+                align-items: unset;
+                margin-top: 16px;
+                .check-list {
+                  margin-top: 4px;
+                }
+              }
+            }
+            .list-item {
+              display: flex;
+              gap: 16px;
+              justify-content: center;
+              flex-wrap: wrap;
+              margin-top: 16px;
+              @include Responsive(SM) {
+                margin-top: 12px;
+              }
+              .item {
+                padding: 12px 16px 16px 16px;
+                background-color: #fff;
+                display: flex;
+                gap: 16px;
+                width: 100%;
+                max-width: 424.5px;
+                border: 1px solid #e0e0e0;
+                border-radius: 8px;
+                .item-content {
+                  .name {
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.0015em;
+                    color: #ff7d01;
+                  }
+                  .bar {
+                    width: 64.94px;
+                    height: 2px;
+                    background: #e0e0e0;
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                  }
+                  .content {
+                    font-size: 12px;
+                    line-height: 14px;
+                    letter-spacing: 0.004em;
+                  }
+                  .store-position{
+                    margin-top: 8px;
+                    display: none;
+                    align-items: center;
+                    gap: 4px;
+                    font-size: 10px;
+                    line-height: 12px;
+                    span{
+                      color: #00B2A9;
+                    }
+                    @include Responsive(SM){
+                      display: flex;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .map {
+          display: flex;
+          flex-direction: column;
+          @include Responsive(SM) {
+            flex-direction: column-reverse;
+            display: none;
+            padding-bottom: 16px;
+          }
+          .address-title {
+            margin-top: 32px;
+            @include Responsive(SM) {
+              margin-top: 16px;
+            }
+            span {
+              @include Responsive(SM) {
+                display: none;
+              }
+            }
+          }
+          .map-contain {
+            height: 800px;
+            margin-top: 16px;
+            position: relative;
+            @include Responsive(SM) {
+              height: 300px;
+              margin-top: 23px;
+              .gmnoprint {
+                button[role="menuitemradio"] {
+                  margin-top: 227px !important;
+                }
+              }
+            }
+            .map-control {
+              position: absolute;
+              width: 45%;
+              right: 30%;
+              top: 15px;
+              z-index: 1;
+              @include Responsive(LG) {
+                right: 20%;
+              }
+              @media screen and (max-width: 1024px) {
+                width: 98%;
+                right: 1%;
+                top: 60px;
+              }
+              @include Responsive(SM) {
+                width: 80%;
+                left: 22px;
+                top: 14px;
+              }
+              .google-search-input {
+                border-radius: 0;
+                height: 30px;
+                padding: 6px 56px 6px 12px;
+                @include Responsive(SM) {
+                  height: 33px;
+                }
+              }
+              .search-box-address {
+                font-family: Roboto;
+                font-size: 15px;
+                line-height: 18px;
+                color: #565656;
+                padding: 6px 0 9px 16px;
+                &::placeholder {
+                  font-size: 15px;
+                  line-height: 18px;
+                  color: #bdbdbd;
+                }
+              }
+              .input-group-text {
+                background-color: #d90e07;
+                height: 30px;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                width: 30px;
+                padding: 0;
+                justify-content: center;
+                color: #fff;
+                @include Responsive(SM) {
+                  height: 33px;
+                  width: 33px;
+                  color: #000000;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

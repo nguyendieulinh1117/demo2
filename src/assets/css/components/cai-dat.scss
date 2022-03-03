@@ -1,0 +1,115 @@
+.rewards-page {
+  .box-rewards {
+    &.settings {
+      padding-left:calc(100% - 45.6em) !important;
+      padding-bottom: 100px !important;
+      @include Responsive(SM) {
+        padding: 16px 0 47px 0 !important;
+      }
+    .item-container {
+      form {
+        background-color: #fff;
+        margin-top: 35px;
+        max-width: 496px;
+        padding: 16px 32px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        @include Responsive(SM) {
+          margin: 16px auto 0;
+          background-color: unset;
+          border: 0;
+          padding: 0;
+        }
+        .mobile-bg {
+          @include Responsive(SM) {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            padding: 8px 12px 12px 12px;
+            border-radius: 8px;
+          }
+        }
+        .title {
+          justify-content: center;
+          padding: 0;
+          @include Responsive(SM) {
+            justify-content: unset;
+          }
+        }
+        button {
+          width: 100%;
+          margin-top: 16px;
+          border: 0;
+          background-color: #ff7d01;
+          padding: 12px 0;
+          color: #fff;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 19px;
+          border-radius: 48px;
+          letter-spacing: 0.005em;
+          @include Responsive(SM) {
+            display: none;
+            font-size: 20px;
+            line-height: 24px;
+            &.hidden {
+              display: block;
+            }
+          }
+        }
+        .input-item {
+          margin-top: 16px;
+          margin-bottom: 0;
+          width: 100%;
+          label {
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0.0025em;
+            margin-bottom: 0;
+          }
+          .select-list {
+            display: flex !important;
+            justify-content: space-between;
+            .input-form {
+              width: 31.5%;
+            }
+          }
+          .input-form {
+            margin-top: 8px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            .input-style {
+              width: 100%;
+              padding: 16px;
+              border: 0;
+              border-bottom: 1px solid #dfe4ea;
+              font-size: 14px;
+              line-height: 21px;
+              &::placeholder {
+                font-size: 14px;
+                line-height: 21px;
+              }
+              &:focus {
+                outline: none;
+              }
+            }
+            select {
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              color: #bdbdbd;
+            }
+            img {
+              position: absolute;
+              right: 25px;
+              cursor: pointer;
+              @include Responsive(SM) {
+                right: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+}
+  }
+}

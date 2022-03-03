@@ -1,0 +1,322 @@
+@import "../common/common.scss";
+body {
+    overflow-x: hidden;
+}
+.navbar-mobile {
+    display: none;
+}
+.first-page {
+    .first-page-stories {
+        padding: 16px 0 0;
+        .container-fluid {
+            margin-bottom: 0;
+        }
+    }
+    .first-page-slider {
+        display: flex;
+        .banner-slider {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+    }
+}
+
+.first-page-slider {
+    height: max-content;
+}
+
+.org-slider-mobile {
+    &.slick-dotted.slick-slider {
+        @include Responsive(XS) {
+            margin-bottom: 0;
+        }
+    }
+
+    .slick-dots {
+        @include Responsive(XS) {
+            bottom: -140px;
+        }
+        li.slick-active button:before {
+            color: $color_brand;
+        }
+        li {
+            margin: 0;
+        }
+    }
+    .slick-list.draggable {
+        padding-bottom: 24px;
+        @include Responsive(XS) {
+            padding-bottom: 0;
+        }
+    }
+    .slide.slick-slide {
+        @include Responsive(SM) {
+            height: auto;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .slick-slide {
+        line-height: 0;
+    }
+}
+
+.product-home-section {
+    @include Responsive(SM) {
+        margin-bottom: 12px !important;
+    }
+    .org-product {
+        @include Responsive(SM) {
+            margin-bottom: 0 !important;
+        }
+    }
+}
+.org-product {
+    .org-product-grid {
+        .product-card {
+            .card-body {
+                border-top: 0;
+            }
+        }
+    }
+    .nav-transform {
+        @include Responsive(XS) {
+            justify-content: center;
+        }
+        @include Responsive(X48) {
+            justify-content: center;
+            flex-wrap: nowrap;
+            margin-bottom: 24px;
+        }
+        @media screen and (max-width: 350px) {
+            justify-content: space-between;
+            overflow-x: scroll;
+        }
+    }
+}
+.wrapper-search {
+    @include Responsive(SM) {
+        background: white;
+        padding-bottom: 0;
+    }
+
+    .container-md {
+        @include Responsive(SM) {
+            padding: 0;
+        }
+        .product-shipping {
+            @include Responsive(SM) {
+                background: transparent;
+                padding: 0;
+            }
+            .org-search {
+                @include Responsive(SM) {
+                    width: 100%;
+                }
+                .tab-content {
+                    .tab-pane-content {
+                        @include Responsive(SM) {
+                            background: inherit;
+                            padding: 0 14.5px;
+                        }
+                        @include Responsive(XS) {
+                            padding: 27px 14.5px;
+                        }
+                    }
+                }
+                .nav-wrapper-simple {
+                    @include Responsive(SM) {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    @include Responsive(XS) {
+                        background: #f5f1ef;
+                    }
+                    .nav {
+                        @include Responsive(SM) {
+                            white-space: unset;
+                        }
+                        .nav-item {
+                            .nav-link {
+                                @include Responsive(SM) {
+                                    color: #fff;
+                                    font-size: 14;
+                                    font-weight: 700;
+                                    margin: 0 12px;
+                                }
+                                @include Responsive(XS) {
+                                    padding: 8px 0 9px;
+                                    margin: 0 8px;
+                                    color: #bcc1cb;
+                                }
+                                &.active {
+                                    @include Responsive(SM) {
+                                        color: #fff;
+                                        font-size: 14;
+                                        font-weight: 700;
+                                        border-bottom: 4px solid $color_brand;
+                                    }
+                                    @include Responsive(XS) {
+                                        color: $color_brand;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    button {
+                        @include Responsive(SM) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.product-home-reorder {
+    @include Responsive(SM) {
+        margin-top: 36px;
+    }
+    .org-product {
+        .content-no-bill {
+            padding-top: 23px;
+            margin: 0;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.0015em;
+            color: #333;
+        }
+        .row-reorder {
+            .reorder-slider {
+                @include Responsive(SM) {
+                    display: flex;
+                    flex-direction: column !important;
+                }
+                .box-reorder {
+                    .wrapper-reorder {
+                        .content-reorder {
+                            @include Responsive(XS) {
+                                flex-direction: column;
+                                margin-left: 24px;
+                                margin-bottom: 6px;
+                            }
+                            .name-product-reorder {
+                                @include Responsive(XS) {
+                                    margin: 0;
+                                }
+                                .name-reorder {
+                                    @include Responsive(XS) {
+                                        margin-bottom: 4px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .image-reorder {
+                            @include Responsive(SM) {
+                                padding-bottom: 19.5px;
+                            }
+                            .box-img-reorder {
+                                img {
+                                    @include Responsive(SM) {
+                                        border-radius: 8px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .wrapper-btn {
+                        @include Responsive(XS) {
+                            padding-top: 12px;
+                            margin-top: 12px;
+                        }
+                        .btn-text-reorder {
+                            line-height: 21px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.btn-order-now {
+    border-radius: 64px;
+    z-index: 100;
+    line-height: 28px;
+    color: #0078ae;
+    border: 1px solid #0078ae;
+    background-color: #fff;
+    font-size: 20px;
+    margin-top: 0.5rem;
+    padding: 1rem 1rem 1rem 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+
+    &:hover {
+        color: #0078ae;
+    }
+
+    > span {
+        margin-right: 10px;
+    }
+}
+
+.modal-content-store {
+    max-width: 500px !important;
+    border-radius: 16px;
+    background: #fffbec;
+    position: relative;
+    padding: 16px;
+    .popup-store {
+        display: flex;
+        padding-top: 40px;
+        .popup-img-store {
+            border-radius: 8px;
+            img {
+                border-radius: inherit;
+                width: 100%;
+                height: auto;
+            }
+        }
+        .popup-content-store {
+            display: flex;
+            flex-direction: column;
+            padding-left: 24px;
+            line-height: 21px;
+            width: max-content;
+            .popup-title {
+                font-size: 24px;
+                font-weight: 700;
+                color: #f25601;
+                padding-bottom: 16px;
+                border-bottom: 2px solid #e0e0e0;
+                width: max-content;
+            }
+            .popup-info {
+                padding-top: 8px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+    .popup-store-closing {
+        position: absolute;
+        color: #828282;
+        font-size: 16px;
+        top: 20px;
+        right: 20px;
+        .icon-close {
+            cursor: pointer;
+        }
+    }
+}
+
+.org-slider .slick-dots li.slick-active button:before {
+    @include Responsive(SM) {
+        color: $color_brand;
+    }
+}

@@ -1,0 +1,351 @@
+@import "../common/variable.scss";
+.cart{
+    .cart-container{
+        max-width: 804px;
+        height: max-content;
+        margin: auto;
+        padding: 32px 14px 78px;
+        @include Responsive(SM){
+            margin-top: 0;
+            padding: 0 14px 16px;
+        }
+        .item-wrap{
+            display: flex;
+            gap: 84px;
+            @include Responsive(SM){
+                flex-direction: column;
+                gap: 24px;
+            }
+            .boxed-title{
+                font-size: 24px;
+                line-height: 29px;
+                letter-spacing: 0.005em;
+            }
+            .user-cart{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                width: 100%;
+                max-width: 360px;
+                
+                @include Responsive(SM){
+                    margin: auto;
+                    max-width: 490px;
+                }
+                .item-des{
+                    margin-top: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    .name{
+                        font-size: 16px;
+                        line-height: 19px;
+                        letter-spacing: 0.0015em;
+                        color: #4F4F4F;
+                    }
+                    .delete-combo{
+                        font-size: 10px;
+                        line-height: 12px;
+                        letter-spacing: 0.015em;
+                        color: #FF7D01;
+                        cursor: pointer;
+                    }
+                    .cart-price{
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 19px;
+                        letter-spacing: 0.005em;
+                        color: #4F4F4F;
+                    }
+                }
+                .list-cart-item{
+                    padding-top: 24px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    .item{
+                        width: 100%;
+                        padding: 12px 0 15px;
+                        border-top: 1px solid #E0E0E0;
+                        display: flex;
+                        gap: 8px;
+                        @include Responsive(SM){
+                            justify-content: space-between;
+                        }
+                        .order{
+                            color: #fff;
+                            background-color: #00B2A9;
+                            font-weight: bold;
+                            font-size: 14px;
+                            border-radius: 100%;
+                            width: 100%;
+                            max-width: 24px;
+                            height: 24px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        .img-detail{
+                            max-width: 64px;
+                            border-radius: 8px;
+                            overflow: hidden;
+                            img{
+                                width: 100%;
+                                height: auto;
+                                object-fit: cover;
+                            }
+                        }
+                        .product-cart-detail{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 9px;
+                            .combo-name{
+                                font-size: 16px;
+                                line-height: 19px;
+                                letter-spacing: 0.0015em;
+                            }
+                            .products-combo{
+                                display: flex;
+                                flex-direction: column;
+                                span{
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    letter-spacing: 0.0025em;
+                                    color: #828282;
+                                }
+                            }
+                            .edit{
+                                font-size: 10px;
+                                line-height: 12px;
+                                letter-spacing: 0.015em;    
+                                color: #FF7D01;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                .payment-wrap{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    margin-top: 0;
+                    gap: 16px;
+                    @include Responsive(SM){
+                        display: none;
+                    }
+                    a{
+                        max-width: 100%;
+                    }
+                    form{
+                        max-width: 100%;
+                    }
+                }
+            }
+            .suggest-product{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 24px;
+                width: 100%;
+                max-width: 332px;
+                height: max-content;
+                padding: 24px;
+                border: 1px solid #E0E0E0;
+                border-radius: 24px;
+                @include Responsive(SM){
+                    margin: auto;
+                    max-width: 490px;
+                }   
+                
+                .list-suggest{
+                    margin-top: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    .item{
+                        display: flex;
+                        gap: 16px;
+                        @include Responsive(SM){
+                            justify-content: space-around;
+                        }
+                        .img-item{
+                            width: 128px;
+                            img{
+                                width: 100%;
+                                height: auto;
+                                object-fit: cover;
+                            }
+                        }
+                        .item-des{
+                            display: flex;
+                            flex-direction: column;
+                            .suggest-name{
+                                font-weight: bold;
+                                font-size: 16px;
+                                line-height: 19px;
+                                letter-spacing: 0.005em;
+                                color: #FF7D01;
+                            }
+                            .suggest-price{
+                                margin-top: 4px;
+                                font-weight: bold;
+                                font-size: 12px;
+                                line-height: 14px;
+                                letter-spacing: 0.004em;
+                                color: #828282;
+                            }
+                            .btn{
+                                margin-top: 12px;
+                                padding: 10px 10px 14px !important;
+                                font-weight: bold;
+                                font-size: 12px;
+                                line-height: 14px;
+                                letter-spacing: 0.004em;
+                                color: #FF7D01;
+                                border: 1px solid #FF7D01;
+                                border-radius: 32px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .payment-wrap{
+            display: none;
+            gap: 84px;
+            margin-top: 24px;
+            @include Responsive(SM){
+                max-width: 490px;
+                margin: 24px auto 0;
+                display: flex;
+                gap: 0;
+                flex-direction: column-reverse;
+            }
+            .add-voucher{
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.0015em;
+                color: #FF7D01;
+                cursor: pointer;
+                &.voucher-mobile{
+                    display: none;
+                    margin-bottom: 57px;
+                    @include Responsive(SM){
+                        display: block;
+                    }
+                }
+            }
+            .pay-btn{
+                width: 100%;
+                height: max-content;
+                text-align: center;
+                padding: 12px 0;
+                background-color: #FF7D01;
+                border-radius: 48px;
+                color: #fff;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.005em;
+                max-width: 360px;
+                @include Responsive(SM){
+                    max-width: 100%;
+                }
+            }
+            .list-discount{
+                flex-direction: column;
+                gap: 14px;
+                width: 100%;
+                max-width: 332px;
+                display: none;
+                @include Responsive(SM){
+                    gap: 17px;
+                    margin-bottom: 30px;
+                }
+                .discount-item{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    @include Responsive(SM){
+                        gap: 22px;
+                    }
+                    .item-box{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4px;
+                       
+                        .item{
+                            display: flex;
+                            justify-content: space-between;
+                            @include Responsive(SM){
+                                justify-content: unset;
+                                gap: 82px;
+                            }
+                            span{
+                                font-weight: bold;
+                                font-size: 16px;
+                                line-height: 19px;
+                                letter-spacing: 0.005em;
+                                color: #FF7D01;
+                            }
+                        }
+                        .delete{
+                            cursor: pointer;
+                            font-size: 12px;
+                                line-height: 14px;
+                                letter-spacing: 0.004em;
+                                color: #D90E07;
+                        }
+                    }
+                }
+            }
+            form{
+                margin: 0 ;
+                display: flex;
+                justify-content: space-between;
+                border-radius: 32px;
+                overflow: hidden;
+                border: 1px solid #E0E0E0;
+                width: 100%;
+                max-width: 332px;
+                display: flex;
+                @include Responsive(SM){
+                    display: none;
+                    max-width: 100%;
+                    margin-bottom: 40px;
+                }
+                input{
+                    width: 100%;
+                    border-radius: 0;
+                    padding: 12px 0 12px 12px;
+                    border: 0;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.0015em;
+                    &:focus{
+                        outline: 0;
+                    }
+                    &::placeholder{
+                        font-size: 16px;
+                        line-height: 19px;
+                        letter-spacing: 0.0015em;
+                        color: #BDBDBD;
+                    }
+                }
+                button{
+                    border: 0;
+                    width: 100%;
+                    max-width: 112px;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-align: center;
+                    color: #fff;
+                    background-color: #FF7D01   ;
+                    &:focus{
+                        outline: 0;
+                    }
+                }
+            }
+        }
+    }
+}

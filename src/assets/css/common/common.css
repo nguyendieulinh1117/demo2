@@ -1,0 +1,315 @@
+a:hover {
+  text-decoration: none;
+}
+
+.show-desktop {
+  display: block;
+}
+@media only screen and (max-width: 767px) {
+  .show-desktop {
+    display: none;
+  }
+}
+
+.show-mobile {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .show-mobile {
+    display: block;
+  }
+}
+
+.text-grey {
+  color: #828282;
+}
+
+.text-grey-2 {
+  color: #4f4f4f;
+}
+
+.text-grey-light {
+  color: #bdbdbd;
+}
+
+.bg-orange-lightest {
+  background-color: #fff2c2 !important;
+}
+
+.bg-orange {
+  background-color: #f25601 !important;
+}
+
+.border-orange {
+  border: #f25601 1px solid !important;
+}
+
+.text-organe {
+  color: #f25601;
+}
+
+.text-darker-red {
+  color: #d90e07;
+}
+
+.bg-pink-lightest {
+  background-color: #fffbec;
+}
+
+.input-group-append .btn-pluss {
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+
+.input-group-prepend .btn-minus {
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+}
+
+.rounded-50 {
+  border-radius: 50px;
+}
+
+.font-600-16 {
+  font-weight: 600 !important;
+  font-size: 16px !important;
+}
+
+.font-400-16 {
+  font-weight: 400 !important;
+  font-size: 16px !important;
+}
+
+.fw-normal {
+  font-weight: normal !important;
+}
+
+.fw-bold {
+  font-weight: 600 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+.fw-bolder {
+  font-weight: 800 !important;
+}
+
+.fs-16 {
+  font-size: 16px !important;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.fs-12 {
+  font-size: 12px !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .desktop {
+    display: none !important;
+  }
+}
+
+.mobile {
+  display: none !important;
+}
+@media only screen and (max-width: 767px) {
+  .mobile {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar {
+    padding: 0 3.5px !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .navbar .navbar-brand img {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .navbar .navbar-brand img {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .navbar .navbar-collapse .navbar-nav .nav-link {
+    padding: 5px;
+    font-size: 14;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .navbar .nav {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .navbar .nav .nav-item {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .navbar .nav .nav-item .nav-link {
+    padding: 5px !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .navbar .nav .nav-item .nav-link {
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .navbar .nav .nav-item.mobile {
+    display: flex;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .navbar .nav .nav-item .link-home {
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+  .navbar .nav .nav-item .link-home img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    padding-top: 24px !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .wrapper-social {
+    border-bottom: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .wrapper-social .footer-search {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .wrapper-social .footer-search .input-group-armchair {
+    flex-wrap: unset;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .footer .wrapper-social .footer-search .input-group-armchair .form-control {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .wrapper-social .footer-search .input-group-armchair .form-control {
+    width: auto !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .wrapper-social .connect-to-domino {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-main .box-hotline .alias-menu-link {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-main .box-hotline .domino-hotline .footer-icon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-main .box-hotline .domino-hotline .hotline-wrapper {
+    border-left: none !important;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-main .box-hotline .domino-hotline .hotline-wrapper p {
+    color: white;
+    font-size: 12 !important;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-main .box-hotline .domino-hotline .hotline-wrapper p img {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-main .box-hotline .domino-hotline .hotline-wrapper a {
+    font-size: 38;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-main .credentials {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .box-switch {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-end .box-brand {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-end .box-brand-mobile {
+    display: block;
+    font-size: 10;
+    font-weight: 600;
+    color: white;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-end .box-brand-mobile .domino-cc {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-end .box-brand-mobile .domino-cc .domino-footer {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid white;
+    padding-right: 16px;
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-end .box-brand-mobile .domino-cc .flag-mobile {
+    padding-left: 8px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-end .box-brand-mobile .domino-cc .flag-mobile a {
+    padding-left: 8px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-end .box-brand-mobile .domino-cc .flag-mobile a img {
+    width: 24px;
+  }
+}
+
+/*# sourceMappingURL=common.css.map */

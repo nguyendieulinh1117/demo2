@@ -1,0 +1,107 @@
+@import "../common/variable.scss";
+
+.section-tracking {
+    padding-bottom: 128px;
+    height: 100%;
+    @include Responsive(SM) {
+        padding-bottom: 292px;
+    }
+    .container {
+        margin-bottom: 0;
+    }
+    .title-tracking {
+        font-size: 26px;
+        margin-bottom: 24px;
+        @include Responsive(SM) {
+            font-size: 24px;
+        }
+    }
+    .form-tracking {
+        max-width: 650px;
+        margin-bottom: 0;
+
+        .input-group-coke .input-group-text {
+            background-color: $color_red_darkest;
+            border-top-left-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+            border: none;
+            margin-left: 1px;
+            padding: 0.6rem 1rem 0.85rem;
+            cursor: pointer;
+            border-top-right-radius: 40px !important;
+            border-bottom-right-radius: 40px !important;
+            background: $color_brand;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .input-group-coke .form-control {
+            border-top: 1px solid #ced4da;
+            border-right: none;
+            border-left: 1px solid #ced4da;
+            border-radius: 40px 0px 0px 40px;
+            padding: 13px 26px;
+            font-size: 16px;
+            line-height: 19px;
+
+            &:focus{
+                outline: none;
+                box-shadow: none;
+                border-color: #ced4da;
+            }
+        }
+
+        .input-group-coke .form-control::-moz-placeholder {
+            color: #858891;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            @include Responsive(XS) {
+                font-size: 14px;
+            }
+        }
+
+        .input-group-coke .form-control:-ms-input-placeholder {
+            color: #bdbdbd;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            @include Responsive(XS) {
+                font-size: 14px;
+            }
+        }
+
+        .input-group-coke .form-control::placeholder {
+            color: #bdbdbd;
+            font-style: normal;
+            font-weight: normal;
+            @include Responsive(XS) {
+                font-size: 14px;
+            }
+        }
+
+        .input-group-append {
+            a {
+                color: white;
+            }
+        }
+    }
+
+    .box-tracking {
+        padding-top: 72px;
+    }
+
+    .box-bg-tracking {
+        margin-top: 70px !important;
+        max-width: 277px;
+        display: flex;
+        margin: 0 auto;
+        @include Responsive(SM) {
+            display: none;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
