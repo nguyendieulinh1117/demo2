@@ -14,7 +14,6 @@ function MyApp({ Component, pageProps }) {
     }, []);
     return (
         <>
-            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
             <Head>
                 <div>
                     <title>Popeye's</title>
